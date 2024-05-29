@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css.css">
+    <title>JUNO-106</title>
+  </head>
+  <body>
+    <div class="juno-106">
+      <div class="panel">
+        <div class="space"></div>
+        <div class="module"> 
+          <!-- --------------- LFO --------------- -->
+          <div class="module--lfo">
+            <h3 class="module--section-label">LFO</h3>
+            <ul class="module--content">
+              <li class="fader-element">
+                <h4 class="element-label">rate</h4>
+                <h4 class="element-label">delay time</h4>
+                <div class="fader">
+                  <div class="fader-slot rate">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+                <div class="fader">
+                  <div class="fader-slot d-time">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- --------------- DCO --------------- -->
+          <div class="module--dco">
+            <h3 class="module--section-label">DCO</h3>
+            <ul class="module--content">
+              <li class="btn--element range">
+                <h4 class="element-label">range</h4>
+                <h4 class="range-label">16</h4>
+                <h4 class="range-label">8</h4>
+                <h4 class="range-label">4</h4>
+                <button class="range-btn range-16"></button>
+                <button class="range-btn range-8"></button>
+                <button class="range-btn range-4"></button>
+              </li>
+              <li class="fader-element">
+                <h4 class="element-label">LFO</h4>
+                <h4 class="element-label">PWM</h4>
+                <div class="fader">
+                  <div class="fader-slot lfo">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+                <div class="fader">
+                  <div class="fader-slot pwm">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="switch-element">
+                <h4 class="element-label">LFO</h4>
+                <div class="switch-slot">
+                  <div class="switch-knob">
+                    <hr>
+                  </div>
+                </div>
+                <h4 class="element-label">MAN</h4>
+              </li>
+              <li class="btn--element">
+                <h4 class="element-label">PWM</h4>
+                <h4 class="element-label">SAW</h4>
+                <button class="pwm"></button>
+                <button class="saw"></button>
+              </li>
+              <li class="fader-element">
+                <h4 class="element-label">SUB</h4>
+                <h4 class="element-label">NOISE</h4>
+                <div class="fader">
+                  <div class="fader-slot sub">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+                <div class="fader">
+                  <div class="fader-slot noise">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>  
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- --------------- HPF --------------- -->
+          <div class="module--hpf">
+            <h3 class="module--section-label">HPF</h3>
+            <ul class="module--content">
+              <li class="fader-element">
+                <h4 class="element-label">FREQ</h4>
+                <div class="fader">
+                  <div class="fader-slot">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- --------------- VCF --------------- -->
+          <div class="module--vcf">
+            <h3 class="module--section-label">VCF</h3>
+            <ul class="module--content">
+              <li class="fader-element">
+                <h4 class="element-label">FREQ</h4>
+                <h4 class="element-label">RES</h4>
+                <div class="fader">
+                  <div class="fader-slot freq">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+                <div class="fader">
+                  <div class="fader-slot res">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="switch-element">
+                <h4 class="element-label">POSITIVE POLARITY</h4>
+                <div class="switch-slot">
+                  <div class="switch-knob">
+                    <hr>
+                  </div>
+                </div>  
+                <h4 class="element-label">NEGATIVE POLARITY</h4>
+              </li>
+              <li class="fader-element">
+                <h4 class="element-label">ENV</h4>
+                <h4 class="element-label">LFO</h4>
+                <h4 class="element-label">KYBD</h4>
+                <div class="fader">
+                  <div class="fader-slot env">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+                <div class="fader">
+                  <div class="fader-slot lfo">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+                <div class="fader">
+                  <div class="fader-slot kybd">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- --------------- VCA --------------- -->
+          <div class="module--vca">
+            <h3 class="module--section-label">VCA</h3>
+            <ul class="module--content">
+              <li class="switch-element">
+                <h4 class="element-label">ENV</h4>
+                <div class="switch-slot">
+                  <div class="switch-knob">
+                    <hr>
+                  </div>
+                </div>
+                <h4 class="element-label">GATE</h4>
+              </li>
+              <li class="fader-element">
+                <h4 class="element-label">level</h4>
+                <div class="fader">
+                  <div class="fader-slot level">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- --------------- ENV --------------- -->
+          <div class="module--env">
+            <h3 class="module--section-label">ENV</h3>
+            <ul class="module--content">
+              <li class="fader-element">
+                <h4 class="element-label">ATK</h4>
+                <h4 class="element-label">DLY</h4>
+                <h4 class="element-label">STN</h4>
+                <h4 class="element-label">RLS</h4>
+                <div class="fader">
+                  <div class="fader-slot atk">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+                <div class="fader">
+                  <div class="fader-slot dly">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+                <div class="fader">
+                  <div class="fader-slot stn">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+                <div class="fader">
+                  <div class="fader-slot rls">
+                    <div class="fader-knob">
+                      <hr>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- --------------- CHORUS --------------- -->
+          <div class="module--chorus">
+            <h3 class="module--section-label">CHORUS</h3>
+            <ul class="module--content">
+              <li class="btn--element">
+                <h4 class="element-label">OFF</h4>
+                <h4 class="element-label">I</h4>
+                <h4 class="element-label">II</h4>
+                <button class="chorus-off"></button>
+                <button class="chorus-1 btn__orange"></button>
+                <button class="chorus-2 btn__orange"></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="btns">
+          <li class="btns--key_assign btn--element">
+            <h4 class="element-label">KEY TRANSPOSE</h4>
+            <h4 class="element-label">POLY 1</h4>
+            <h4 class="element-label">POLY 2</h4>
+            <button class="key-transp btn__orange"></button>
+            <button class="poly-1 "></button>
+            <button class="poly-2 "></button>
+          </li>
+          <li class="btns--midi_ch btn--element">
+            <h4 class="element-label">MIDI CH</h4>
+            <button class="range-btn midi-ch btn__blue"></button>
+          </li>
+          <li class="btns--bank_grp_sel btn--element">
+            <h4 class="element-label">SELECT</h4>
+            <button class="range-btn sel-grp"></button>
+          </li>
+          <li class="btns--bank btn--element">
+            <h4 class="element-label">1</h4>
+            <h4 class="element-label">2</h4>
+            <h4 class="element-label">3</h4>
+            <h4 class="element-label">4</h4>
+            <h4 class="element-label">5</h4>
+            <h4 class="element-label">6</h4>
+            <h4 class="element-label">7</h4>
+            <h4 class="element-label">8</h4>
+            <button class="bank-1"></button>
+            <button class="bank-2"></button>
+            <button class="bank-3"></button>
+            <button class="bank-4"></button>
+            <button class="bank-5"></button>
+            <button class="bank-6"></button>
+            <button class="bank-7"></button>
+            <button class="bank-8"></button>
+          </li>
+          <li class="btns--display">
+            <h2 class="display">11</h2>
+          </li>
+          <li class="btns--patch btn--element">
+            <h4 class="element-label">1</h4>
+            <h4 class="element-label">2</h4>
+            <h4 class="element-label">3</h4>
+            <h4 class="element-label">4</h4>
+            <h4 class="element-label">5</h4>
+            <h4 class="element-label">6</h4>
+            <h4 class="element-label">7</h4>
+            <h4 class="element-label">8</h4>
+            <button class="patch-1"></button>
+            <button class="patch-2"></button>
+            <button class="patch-3"></button>
+            <button class="patch-4"></button>
+            <button class="patch-5"></button>
+            <button class="patch-6"></button>
+            <button class="patch-7"></button>
+            <button class="patch-8"></button>
+          </li>
+          <li class="btns--manual_patch btn--element">
+            <h4 class="element-label">MANUAL</h4>
+            <button class="manual"></button>
+          </li>
+          <li class="btns--write btn--element">
+            <h4 class="element-label">WRITE</h4>
+            <button class="write"></button>
+          </li>
+          <li class="btns--data_btns btn--element">
+            <h4 class="element-label">SAVE</h4>
+            <h4 class="element-label">VERIFY</h4>
+            <h4 class="element-label">LOAD</h4>
+            <button class="save"></button>
+            <button class="verify"></button>
+            <button class="load"></button>
+          </li>
+        </ul>
+        <div class="space"></div>
+      </div>
+      <div class="bender">
+        <ul class="bender--knobs">
+          <li class="knob--element">
+            <h4 class="element-label">
+              VOLUME
+            </h4>
+            <div class="knob">
+              <div class="knob--pointer"></div>
+            </div>
+            <div class="knob--position-display">50</div>
+          </li>
+          <li class="knob--element">
+            <h4 class="element-label">
+              PORTAMENTO
+            </h4>
+            <div class="knob">
+              <div class="knob--pointer"></div>
+            </div>
+            <div class="knob--position-display">50</div>
+          </li>
+        </ul>
+        <ul class="bender--fader">
+          <li class="fader-element">
+            <h4 class="element-label">DCO</h4>
+            <h4 class="element-label">VCF</h4>
+            <h4 class="element-label">LFO</h4>
+            <div class="fader">
+              <div class="fader-slot dco">
+                <div class="fader-knob">
+                  <hr>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="fader">
+              <div class="fader-slot vcf">
+                <div class="fader-knob">
+                  <hr>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="fader">
+              <div class="fader-slot lfo">
+                <div class="fader-knob">
+                  <hr>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="bender--bender_slider">
+          
+        </ul>
+      </div>
+      <div class="keyboard">
+        <ul class="keys-container">
+
+          <!-- <li class="c oct-2 c2 white"><span class="key-label">C2</span></li>
+          <li class="cs oct-2 cs2 black"><span class="key-label">C#2</span></li>
+          <li class="d oct-2 d2 white"><span class="key-label">D2</span></li>
+          <li class="ds oct-2 ds2 black"><span class="key-label">D#2</span></li>
+          <li class="e oct-2 e2 white"><span class="key-label">E2</span></li>
+          <li class="f oct-2 f2 white"><span class="key-label">F2</span></li>
+          <li class="fs oct-2 fs2 black"><span class="key-label">F#2</span></li>
+          <li class="g oct-2 g2 white"><span class="key-label">G2</span></li>
+          <li class="gs oct-2 gs2 black"><span class="key-label">G#2</span></li>
+          <li class="a oct-2 a2 white"><span class="key-label">A2</span></li>
+          <li class="as oct-2 as2 black"><span class="key-label">A#2</span></li>
+          <li class="b oct-2 b2 white"><span class="key-label">B2</span></li>
+
+          <li class="c oct-3 c3 white"><span class="key-label">C3</span></li>
+          <li class="cs oct-3 cs3 black"><span class="key-label">C#3</span></li>
+          <li class="d oct-3 d3 white"><span class="key-label">D3</span></li>
+          <li class="ds oct-3 ds3 black"><span class="key-label">D#3</span></li>
+          <li class="e oct-3 e3 white"><span class="key-label">E3</span></li>
+          <li class="f oct-3 f3 white"><span class="key-label">F3</span></li>
+          <li class="fs oct-3 fs3 black"><span class="key-label">F#3</span></li>
+          <li class="g oct-3 g3 white"><span class="key-label">G3</span></li>
+          <li class="gs oct-3 gs3 black"><span class="key-label">G#3</span></li>
+          <li class="a oct-3 a3 white"><span class="key-label">A3</span></li>
+          <li class="as oct-3 as3 black"><span class="key-label">A#3</span></li>
+          <li class="b oct-3 b3 white"><span class="key-label">B3</span></li>
+
+          <li class="c oct-4 c4 white"><span class="key-label">C4</span></li>
+          <li class="cs oct-4 cs4 black"><span class="key-label">C#4</span></li>
+          <li class="d oct-4 d4 white"><span class="key-label">D4</span></li>
+          <li class="ds oct-4 ds4 black"><span class="key-label">D#4</span></li>
+          <li class="e oct-4 e4 white"><span class="key-label">E4</span></li>
+          <li class="f oct-4 f4 white"><span class="key-label">F4</span></li>
+          <li class="fs oct-4 fs4 black"><span class="key-label">F#4</span></li>
+          <li class="g oct-4 g4 white"><span class="key-label">G4</span></li>
+          <li class="gs oct-4 gs4 black"><span class="key-label">G#4</span></li>
+          <li class="a oct-4 a4 white"><span class="key-label">A4</span></li>
+          <li class="as oct-4 as4 black"><span class="key-label">A#4</span></li>
+          <li class="b oct-4 b4 white"><span class="key-label">B4</span></li>
+
+          <li class="c oct-5 c5 white"><span class="key-label">C5</span></li>
+          <li class="cs oct-5 cs5 black"><span class="key-label">C#5</span></li>
+          <li class="d oct-5 d5 white"><span class="key-label">D5</span></li>
+          <li class="ds oct-5 ds5 black"><span class="key-label">D#5</span></li>
+          <li class="e oct-5 e5 white"><span class="key-label">E5</span></li>
+          <li class="f oct-5 f5 white"><span class="key-label">F5</span></li>
+          <li class="fs oct-5 fs5 black"><span class="key-label">F#5</span></li>
+          <li class="g oct-5 g5 white"><span class="key-label">G5</span></li>
+          <li class="gs oct-5 gs5 black"><span class="key-label">G#5</span></li>
+          <li class="a oct-5 a5 white"><span class="key-label">A5</span></li>
+          <li class="as oct-5 as5 black"><span class="key-label">A#5</span></li>
+          <li class="b oct-5 b5 white"><span class="key-label">B5</span></li>
+
+          <li class="c oct-6 c6 white"><span class="key-label">C6</span></li>
+          <li class="cs oct-6 cs6 black"><span class="key-label">C#6</span></li>
+          <li class="d oct-6 d6 white"><span class="key-label">D6</span></li>
+          <li class="ds oct-6 ds6 black"><span class="key-label">D#6</span></li>
+          <li class="e oct-6 e6 white"><span class="key-label">E6</span></li>
+          <li class="f oct-6 f6 white"><span class="key-label">F6</span></li>
+          <li class="fs oct-6 fs6 black"><span class="key-label">F#6</span></li>
+          <li class="g oct-6 g6 white"><span class="key-label">G6</span></li>
+          <li class="gs oct-6 gs6 black"><span class="key-label">G#6</span></li>
+          <li class="a oct-6 a6 white"><span class="key-label">A6</span></li>
+          <li class="as oct-6 as6 black"><span class="key-label">A#6</span></li>
+          <li class="b oct-6 b6 white"><span class="key-label">B6</span></li> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

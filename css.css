@@ -1,0 +1,309 @@
+@font-face {
+  font-family: DSDigital;
+  src: url("./ds_digital/DS-DIGI.TTF");
+}
+html {
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.juno-106 {
+  color: #d1d1d1;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.juno-106 .panel {
+  background-color: #373737;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  /* & > * > * {
+    border: $black 1px solid;
+  } */
+}
+.juno-106 .panel * {
+  box-sizing: content-box;
+}
+.juno-106 .panel hr {
+  margin: 0;
+  background-color: #d1d1d1;
+}
+.juno-106 .panel button {
+  aspect-ratio: 3/2;
+  width: 3rem;
+  background-color: #bfc0b4;
+  border-radius: 3px;
+}
+.juno-106 .panel button.btn__orange {
+  background-color: #eca20c;
+}
+.juno-106 .panel button.btn__blue {
+  background-color: #5f949b;
+}
+.juno-106 .panel .btns--bank button, .juno-106 .panel .btns--patch button {
+  background-color: #5f949b;
+}
+.juno-106 .panel .module {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  gap: 0.1rem;
+}
+.juno-106 .panel .module > * {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-bottom: #721b18 0.25rem solid;
+}
+.juno-106 .panel .module--section-label {
+  background-color: #721b18;
+  text-align: center;
+  box-sizing: border-box;
+  margin-right: 4px;
+}
+.juno-106 .panel .module--content {
+  display: flex;
+  margin: 0;
+  border-right: #d1d1d1 solid 3px;
+}
+.juno-106 .panel .module--content li {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  grid-template-rows: auto 1fr;
+  padding: 0.75rem;
+}
+.juno-106 .panel .module--content li.switch-element {
+  grid-template-rows: auto 1fr auto;
+}
+.juno-106 .panel .module--content li.switch-element .element-label:first-child {
+  grid-row: 1;
+}
+.juno-106 .panel .module--content li.switch-element .element-label:last-child {
+  grid-row: 3;
+}
+.juno-106 .panel .module--content li.switch-element .switch-slot {
+  height: 3rem;
+  aspect-ratio: 1/3;
+  background-color: black;
+}
+.juno-106 .panel .module--content li.switch-element .switch-slot .switch-knob {
+  aspect-ratio: 1/1;
+  width: 1rem;
+  background-color: #121212;
+  display: grid;
+  align-items: center;
+  border: #565656 1px dotted;
+}
+.juno-106 .panel .module--content li.fader-element > * {
+  width: 4rem;
+}
+.juno-106 .panel .module--content li.fader-element .fader {
+  height: 85%;
+  display: grid;
+  justify-content: center;
+  box-sizing: border-box;
+  background: repeating-linear-gradient(0deg, #fff, #fff 1px, transparent 1px, transparent 14.6px);
+}
+.juno-106 .panel .module--content li.fader-element .fader-slot {
+  background-color: black;
+  width: 0.5rem;
+  border-radius: 100rem;
+  margin: 0 1.75rem 0 1.75rem;
+  position: relative;
+  display: grid;
+  justify-items: center;
+}
+.juno-106 .panel .module--content li.fader-element .fader-knob {
+  width: 2rem;
+  border-radius: 2px;
+  aspect-ratio: 2/1;
+  background-color: #121212;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.juno-106 .panel .module--content li.fader-element .fader-knob hr {
+  width: 20%;
+  height: 1px;
+}
+.juno-106 .panel .module--content li .element-label {
+  grid-row: 1;
+}
+.juno-106 .panel .module--content li .range-label {
+  grid-row: 2;
+}
+.juno-106 .panel .module--content li.btn--element button {
+  grid-row: 2;
+}
+.juno-106 .panel .module--content li.btn--element button.range-btn {
+  grid-row: 3;
+}
+.juno-106 .panel .module--content li.range {
+  grid-template-rows: auto auto 1fr;
+}
+.juno-106 .panel .module--content li.range .element-label {
+  grid-column: 1/4;
+}
+.juno-106 .panel .space {
+  grid-row: 1/3;
+}
+.juno-106 .panel .btns {
+  grid-column: 2;
+  grid-row: 2;
+  justify-content: center;
+}
+.juno-106 .panel .btns * {
+  box-sizing: content-box;
+}
+.juno-106 .panel .btns li {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  padding: 0 0.75rem 0 0.75rem;
+}
+.juno-106 .panel .btns li .element-label {
+  grid-row: 1;
+}
+.juno-106 .panel .btns li.btns--display .display {
+  font-family: DSDigital;
+  font-size: 4rem;
+  letter-spacing: 0.75rem;
+  background-color: #330000;
+  border: 3px #220000 solid;
+  color: red;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  aspect-ratio: 5/4;
+  width: 5rem;
+}
+.juno-106 .bender {
+  grid-column: 1;
+  background-color: #202020;
+  width: 20rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+}
+.juno-106 .bender > * {
+  display: grid;
+  justify-items: center;
+}
+.juno-106 .bender > * .element-label {
+  text-align: center;
+  grid-row: 1;
+}
+.juno-106 .bender > * li {
+  display: grid;
+}
+.juno-106 .bender--knobs {
+  grid-template-columns: 1fr 1fr;
+}
+.juno-106 .bender--knobs .knob {
+  width: 6rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #373737;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.juno-106 .bender--knobs .knob--pointer {
+  background-color: #d1d1d1;
+  width: 0.3rem;
+  height: 1.5rem;
+}
+.juno-106 .bender--knobs .knob--element {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.juno-106 .bender--fader {
+  height: 10rem;
+}
+.juno-106 .bender--fader .fader-element {
+  grid-template-rows: auto 1fr;
+  justify-content: auto;
+}
+.juno-106 .bender--fader .fader-element > * {
+  width: 4rem;
+}
+.juno-106 .bender--fader .fader-element .fader {
+  height: 85%;
+  display: grid;
+  justify-content: center;
+  box-sizing: border-box;
+  background: repeating-linear-gradient(0deg, #fff, #fff 1px, transparent 1px, transparent 14.6px);
+}
+.juno-106 .bender--fader .fader-element .fader-slot {
+  background-color: black;
+  width: 0.5rem;
+  border-radius: 100rem;
+  margin: 0 1.75rem 0 1.75rem;
+  position: relative;
+  display: grid;
+  justify-items: center;
+}
+.juno-106 .bender--fader .fader-element .fader-knob {
+  width: 2rem;
+  border-radius: 2px;
+  aspect-ratio: 2/1;
+  background-color: #121212;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.juno-106 .bender--fader .fader-element .fader-knob hr {
+  width: 20%;
+  height: 1px;
+}
+.juno-106 .bender--fader .element-label {
+  grid-row: 1;
+  margin-bottom: 1rem;
+}
+.juno-106 .bender--fader .range-label {
+  grid-row: 2;
+}
+.juno-106 .bender--fader.btn--element button {
+  grid-row: 2;
+}
+.juno-106 .bender--fader.btn--element button.range-btn {
+  grid-row: 3;
+}
+.juno-106 .bender--fader.range {
+  grid-template-rows: auto auto 1fr;
+}
+.juno-106 .bender--fader.range .element-label {
+  grid-column: 1/4;
+}
+.juno-106 .keyboard {
+  grid-column: 2;
+}
+
+/*# sourceMappingURL=css.css.map */
